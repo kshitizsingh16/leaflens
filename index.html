@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cluster Health Dashboard</title>
+    <link
+      rel="icon"
+      href="https://cdn-icons-png.flaticon.com/512/2907/2907254.png"
+      type="image/png" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background-color: #eef2f7;
+      }
+
+      header {
+        background-color: #1e293b;
+        color: #ffffff;
+        padding: 15px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      header img {
+        height: 50px;
+        margin-right: 15px;
+      }
+
+      header h1 {
+        font-size: 24px;
+        letter-spacing: 1px;
+      }
+
+      .dashboard {
+        flex: 1;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        padding: 20px;
+        overflow-y: auto;
+      }
+
+      .card {
+        background-color: #ffffff;
+        border: 1px solid #e0e0e0;
+        border-radius: 12px;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+      }
+
+      .card h3 {
+        font-size: 18px;
+        color: #1e293b;
+        margin: 0 0 10px;
+        font-weight: bold;
+      }
+
+      .card p {
+        font-size: 14px;
+        color: #64748b;
+        margin: 0 0 15px;
+      }
+
+      .cluster-link {
+        text-decoration: none;
+        color: #0ea5e9;
+        font-weight: bold;
+        font-size: 14px;
+        display: inline-block;
+        padding: 8px 16px;
+        border: 2px solid #0ea5e9;
+        border-radius: 6px;
+        transition: background-color 0.2s ease, color 0.2s ease;
+      }
+
+      .cluster-link:hover {
+        background-color: #0ea5e9;
+        color: #ffffff;
+      }
+
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background-color: #cbd5e1;
+        border-radius: 5px;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background-color: #94a3b8;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/2907/2907254.png"
+        alt="Plant Icon" />
+      <h1>Cluster Health Dashboard</h1>
+    </header>
+
+    <div class="dashboard">
+      <div class="card">
+        <h3>Cluster 1</h3>
+        <p>View data for all plants in this cluster</p>
+        <a href="cluster1.html" target="_blank" class="cluster-link"
+          >Open Cluster 1 Data</a
+        >
+      </div>
+
+      <div class="card">
+        <h3>Cluster 2</h3>
+        <p>View data for all plants in this cluster</p>
+        <a href="cluster2.html" target="_blank" class="cluster-link"
+          >Open Cluster 2 Data</a
+        >
+      </div>
+
+      <div class="card">
+        <h3>Cluster 3</h3>
+        <p>View data for all plants in this cluster</p>
+        <a href="cluster3.html" target="_blank" class="cluster-link"
+          >Open Cluster 3 Data</a
+        >
+      </div>
+
+      <div class="card">
+        <h3>Cluster 4</h3>
+        <p>View data for all plants in this cluster</p>
+        <a href="cluster4.html" target="_blank" class="cluster-link"
+          >Open Cluster 4 Data</a
+        >
+      </div>
+
+      <div class="card">
+        <h3>Cluster 5</h3>
+        <p>View data for all plants in this cluster</p>
+        <a href="cluster5.html" target="_blank" class="cluster-link"
+          >Open Cluster 5 Data</a
+        >
+      </div>
+
+      <div class="card">
+        <h3>Cluster 6</h3>
+        <p>View data for all plants in this cluster</p>
+        <a href="cluster6.html" target="_blank" class="cluster-link"
+          >Open Cluster 6 Data</a
+        >
+      </div>
+
+      <div class="card">
+        <h3>Cluster 7</h3>
+        <p>View data for all plants in this cluster</p>
+        <a href="cluster7.html" target="_blank" class="cluster-link"
+          >Open Cluster 7 Data</a
+        >
+      </div>
+
+      <div class="card">
+        <h3>Cluster 8</h3>
+        <p>View data for all plants in this cluster</p>
+        <a href="cluster8.html" target="_blank" class="cluster-link"
+          >Open Cluster 8 Data</a
+        >
+      </div>
+    </div>
+  </body>
+</html>
